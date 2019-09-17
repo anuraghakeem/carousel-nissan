@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Carousel from './component/carousel'
 
-const Index = () => {
-  return <div>Hello React!</div>;
-};
+// const Index = () => {
+//   return <Carousel/>;
+// };
 
-ReactDOM.render(<Index />, document.getElementById("index"));
+ReactDOM.render(<Carousel />, document.getElementById("index"));
