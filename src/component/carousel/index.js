@@ -4,21 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const Carousel = () => {
-
-    function next () {
-        console.log("Prevuiious")
-        // slider.slickNext();
-      }
-
-    function previous  ()   {
-        console.log("Next")
-        // slider.slickPrev();
-      }
-
-      
-
     var settings = {
         dots: true,
+        autoplay: true,
         infinite: true,
         speed: 500,
         arrows:true,
@@ -31,8 +19,7 @@ const Carousel = () => {
      }
 
     return (
-        <div>
-
+        <div className='c_007' data-autoplay='true' data-autoplay-speed>
             <Slider {...settings} style={myStyle}>
                 <div>
                     <img src="https://www-europe.nissan-cdn.net/content/dam/Nissan/nissan_europe/vehicles/2019_NEW_NISSAN_JUKE/Push/UNVEIL/HOMEPAGE/19TDIEURHD_JUKE_HOMEPAGE_PUSH_UVEIL_001.jpg.ximg.full.hero.jpg"/>
@@ -57,10 +44,7 @@ const Carousel = () => {
                     <img src="//www-europe.nissan-cdn.net/content/dam/Nissan/nissan_europe/vehicles/2019_NEW_NISSAN_JUKE/Push/UNVEIL/HOMEPAGE/19TDIEURHD_JUKE_HOMEPAGE_PUSH_UVEIL_001.jpg.ximg.full.hero.jpg" />
 
                 </div>
-               
-            </Slider>
-            
-            
+            </Slider>  
         </div>
     )
 }
